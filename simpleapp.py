@@ -17,7 +17,7 @@ tickerSymbol = 'TSLA'
 tickerData = yf.Ticker(tickerSymbol)
 
 #get the historical prices for this ticker
-tickerDf = tickerData.history(period='1d', start='2022-1-1', end='2023-9-3')
+tickerDf = tickerData.history(period='1y', start='2022-9-1', end='2023-9-3')
 
 col1, col2 = st.beta_columns([1,2])
 with col1:
